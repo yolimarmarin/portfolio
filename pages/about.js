@@ -7,11 +7,13 @@ import {
 } from "../components/containers";
 import { NavBar } from "../components/navbar";
 import { TimeLine } from "../components/timeline";
+import Loader from '../components/loader';
 
 export default function About(props) {
   const { hobbies, formation, experience } = props;
 
   return (
+    hobbies.length !== 0 && formation.length !== 0 && experience.length !== 0 ? 
     <div className="mainContainer">
       <Head>
         <title>Yolimar Marin - About me</title>
@@ -42,7 +44,8 @@ export default function About(props) {
       </div>
 
       <FooterContainer />
-    </div>
+    </div> :
+    <Loader/>
   );
 }
 
