@@ -1,0 +1,19 @@
+.routingButton{
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .routingButton:hover{
+    background-color: rgba(196,132,69,0.7);
+  }
+
+  .activeButton{
+    background-color: rgba(196,132,69,0.7);
+  }

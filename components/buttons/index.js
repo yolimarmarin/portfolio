@@ -1,12 +1,14 @@
-import style from '../../styles/Buttons.module.css'
+import style from "../../styles/Buttons.module.css";
 
+const RoutingButton = ({ title, onClick, active }) => {
+  return (
+    <button
+      className={`${style.routingButton} ${active ? style.activeButton : null}`}
+      onClick={onClick}
+    >
+      {title}
+    </button>
+  );
+};
 
-const RoutingButton = ({title}) =>{
-    return(
-        <a className={style.routingButton}>{title}</a>
-    )
-}
-
-export {
-    RoutingButton
-}
+export { RoutingButton };

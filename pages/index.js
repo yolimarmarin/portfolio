@@ -1,9 +1,11 @@
 import Head from "next/head";
 import style from "../styles/Home.module.css";
 import { FooterContainer } from "../components/containers";
-import Link from "next/link";
+import {RoutingButton} from '../components/buttons'
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className={style.container}>
       <Head>
@@ -13,7 +15,7 @@ export default function Home() {
 
       <div className={style.title}>Hi! I'm Yoli</div>
 
-      <img src="/profile.jpg" className={style.profile} alt="Yolimar Marin"/>
+      <img src="/profile.jpg" className={style.profile} alt="Yolimar Marin" />
 
       <div className={style.subtitle}>I'm a Front-End Developer.</div>
 
@@ -24,15 +26,12 @@ export default function Home() {
       </div>
 
       <div className={style.buttons}>
-        <Link href="/about">
-          <a className="routingButton">About Me</a>
-        </Link>
-        <Link href="/portfolio">
-          <a className="routingButton">Portfolio</a>
-        </Link>
-        <Link href="/skills">
-          <a className="routingButton">Skills</a>
-        </Link>
+        <RoutingButton title="About Me" onClick={() => router.push("/about")} />
+        <RoutingButton
+          title="Portfolio"
+          onClick={() => router.push("/portfolio")}
+        />
+        <RoutingButton title="Skills" onClick={() => router.push("/skills")} />
       </div>
 
       <FooterContainer />
