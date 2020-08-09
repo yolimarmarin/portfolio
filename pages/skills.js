@@ -4,11 +4,13 @@ import style from "../styles/Skills.module.css";
 import { FooterContainer } from "../components/containers";
 import { NavBar } from "../components/navbar";
 import CircularProgressBar from "../components/circular-progress-bar";
+import Loader from '../components/loader';
 
 export default function Skills(props) {
   const { skills } = props;
 
   return (
+    skills.length !== 0 ?
     <div className="mainContainer">
       <Head>
         <title>Yolimar Marin - Skills</title>
@@ -30,7 +32,8 @@ export default function Skills(props) {
       </div>
 
       <FooterContainer />
-    </div>
+    </div>:
+    <Loader/>
   );
 }
 

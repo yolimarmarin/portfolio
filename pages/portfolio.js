@@ -5,6 +5,7 @@ import { FooterContainer } from "../components/containers";
 import { NavBar } from "../components/navbar";
 import { useEffect, useState } from "react";
 import { PortfolioCards } from "../components/cards";
+import Loader from '../components/loader';
 
 export default function Portfolio(props) {
   const [portfolio, setPortfolio] = useState([]);
@@ -36,6 +37,7 @@ export default function Portfolio(props) {
   }
 
   return (
+    portfolio.length !== 0 ?
     <div className="mainContainer">
       <Head>
         <title>Yolimar Marin - Portfolio</title>
@@ -62,7 +64,8 @@ export default function Portfolio(props) {
       </div>
 
       <FooterContainer />
-    </div>
+    </div> : 
+    <Loader/>
   );
 }
 
