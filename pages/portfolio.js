@@ -36,8 +36,15 @@ export default function Portfolio(props) {
     window.open(url)
   }
 
+  const isPortfolioReady = () =>{
+    for(let work of portfolio){
+      if(!work.img){ return false}
+    }
+    return true
+  }
+
   return (
-    portfolio.length !== 0 ?
+    isPortfolioReady() ?
     <div className="mainContainer">
       <Head>
         <title>Yolimar Marin - Portfolio</title>
