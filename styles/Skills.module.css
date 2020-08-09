@@ -42,3 +42,9 @@
         margin-top: 20px;
       }
 }
+
+@media(min-width:500px) and (max-width:1024px){
+    .skillContainer{
+        padding: 20px;
+    }
+}
