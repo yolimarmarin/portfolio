@@ -1,0 +1,18 @@
+.sectionContainer {
+  width: 90%;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.sectionContent {
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  .sectionContent {
+    margin: 0px;
+  }
+
+  .sectionContainer {
+    margin-top: 20px;
+  }
+}

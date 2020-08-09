@@ -1,0 +1,22 @@
+.timelineTitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.timelineText {
+  margin-top: 10px;
+  line-height: 1.5;
+  overflow-y: scroll;
+  text-align: justify;
+}
+
+@media (max-width: 500px) {
+  .timelineTitle {
+    font-size: 16px;
+  }
+
+  .timelineText {
+    max-height: 200px;
+    text-align: left;
+  }
+}

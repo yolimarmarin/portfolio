@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "d3-ease": "^1.0.6",
+    "firebase": "^7.17.2",
     "next": "9.5.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-circular-progressbar": "^2.0.3",
+    "react-dom": "16.13.1",
+    "react-feather": "^2.0.8",
+    "react-move": "^6.4.0",
+    "react-vertical-timeline-component": "^3.0.2",
+    "styled-components": "^5.1.1"
   }
 }

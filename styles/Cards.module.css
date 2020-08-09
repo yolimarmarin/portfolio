@@ -1,0 +1,91 @@
+.primaryCardContainer{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    max-width: 330px;
+}
+
+.primaryCardTitle{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.primaryCardText{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.primaryCardIconContainer{
+    height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolioCardContainer{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #c48445;
+    box-sizing: border-box;
+    padding: 50px 20px 20px 20px;
+    margin-top: 60px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.portfolioCardImg{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px );
+    border: 1.5px solid #c48445;
+}
+
+.portfolioCardTitle{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 15px 0;
+}
+
+.portfolioCardText{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.portfolioCardTagsContainer{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolioCardTag{
+    background-color: rgba(255,255,255,0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+@media (max-width: 500px){
+    .primaryCardContainer{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .portfolioCardContainer{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

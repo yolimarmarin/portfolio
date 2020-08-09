@@ -1,0 +1,20 @@
+.sectionContainer {
+    width: 90%;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+  }
+
+.contentContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+@media(max-width:500px){
+  .sectionContainer {
+    margin-top: 20px;
+  }
+}

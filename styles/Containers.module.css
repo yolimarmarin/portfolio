@@ -1,0 +1,26 @@
+.footerContainer{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    width: 100%;
+    background-color: #272928;
+    padding: 20px 0;
+}
+
+.footerContainer svg {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footerContainer svg:hover{
+    color: #c48445;
+}
+
+.PrimaryCardsContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
