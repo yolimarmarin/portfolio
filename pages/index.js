@@ -17,7 +17,7 @@ export default function Home() {
 
       <img src="/profile.jpg" className={style.profile} alt="Yolimar Marin" />
 
-      <div className={style.subtitle}>I'm a Front-End Developer.</div>
+      <div className={style.subtitle}>I'm a Web Engineer.</div>
 
       <div className={style.text}>
         I found my love towards programming 3 years ago while I was finishing my
